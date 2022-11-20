@@ -1,0 +1,55 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro paciente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cadastro.component.css" />
+</head>
+
+<body>
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+
+        <div class="content">
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="">
+                    <h1>Cadastro</h1>
+
+                    <p>
+                        <label for="nome_cad">Nome</label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                    </p>
+                    <p>
+                        <label for="nasc_cad">Data de nascimento</label>
+                        <input id="nasc_cad" name="nasc_cad" required="required" type="date" placeholder="xx/xx/xxxx" />
+                    </p>
+
+                    <p>
+                        <label for="num_cad">Número de celular</label>
+                        <input id="num_cad" name="num_cad" required="required" type="tel"
+                            placeholder="(xx)xxxxx-xxxx" />
+                    </p>
+
+                    <p>
+                        <label for="cpf_cad">CPF</label>
+                        <input id="cpf_cad" name="cpf_cad" required="required" type="number"
+                            placeholder="xxx.xxx.xxx-xx" min="14" max="14" />
+                    </p>
+                    <p>
+                        <label for="con_cad">Convênio</label>
+                        <input id="con_cad" name="con_cad" required="required" type="text" placeholder="São Judas" />
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Cadastrar" />
+                    </p>
+                    <p class="link">
+                        <a href="#voltainicio"> Voltar </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
