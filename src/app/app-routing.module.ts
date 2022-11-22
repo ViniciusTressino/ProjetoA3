@@ -6,6 +6,7 @@ const routes: Routes = [{
   redirectTo: 'login',
   pathMatch: 'full',
 },
+
 { path: 'login', loadChildren: () => import('./views/login/login.module').then(m => m.LoginModule) },
 
 { path: 'home', loadChildren: () => import('./views/home/home.module').then(m => m.HomeModule) },

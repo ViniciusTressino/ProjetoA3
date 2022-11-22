@@ -8,4 +8,18 @@ const routes: Routes = [{ path: '', component: LoginComponent }];
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LoginRoutingModule { }
+export class LoginRoutingModule { 
+  logar() {
+
+    var emails = (<HTMLInputElement>document.getElementById('emails')).value;
+    var senhas = (<HTMLInputElement>document.getElementById('senhas')).value;
+
+    if(emails == "admin" && senhas == "admin") {
+      alert('Sucesso');
+      location.href = "home.component.html"
+    }else{
+      alert('Usuario ou senha invalido');
+
+    }
+  }
+}

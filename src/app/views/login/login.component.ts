@@ -8,8 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   framework = "Angular";
 
-  
-  logar(){
+   /*logar() {
+
+    var emails = (<HTMLInputElement>document.getElementById('emails')).value;
+    var senhas = (<HTMLInputElement>document.getElementById('senhas')).value;
+
+    if(emails == "admin" && senhas == "admin") {
+      alert('Sucesso');
+      location.href = "home.component.html"
+    }else{
+      alert('Usuario ou senha invalido');
+
+    }
+  }*/
+
+  /*logar(){
 
     var emails = (<HTMLInputElement>document.getElementById('emails')).value;
     var senhas = (<HTMLInputElement>document.getElementById('senhas')).value;
@@ -19,7 +32,7 @@ console.log(JSON.stringify({
     senhas:senhas
 }));
 
-    fetch("/login",{
+    fetch('/login.component.html',{
         method:'POST',
         body: JSON.stringify({
           emails:emails,
@@ -40,7 +53,7 @@ console.log(JSON.stringify({
         
     });
 
-}
+}*/
  
   constructor() { }
 

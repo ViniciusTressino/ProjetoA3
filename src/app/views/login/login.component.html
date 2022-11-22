@@ -1,15 +1,11 @@
 <head>
     <meta charset="UTF-8" />
-    <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+    <title>Tela de Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="login.component.css" />
 </head>
 
 <body>
-    <div class="container">
-        <a class="links" id="paracadastro"></a>
-        <a class="links" id="paralogin"></a>
-
         <div class="content">
 
             <div id="login">
@@ -22,8 +18,7 @@
 
                     <p>
                         <label for="senhas">Senha</label>
-                        <input id="senhas" name="senha" type="password"
-                            placeholder="Coxinha123" />
+                        <input id="senhas" name="senha" type="password" placeholder="Coxinha123" />
                     </p>
 
                     <p>
@@ -31,7 +26,7 @@
                         <label for="manterlogado"> Manter-se conectado</label>
                     </p>
 
-                    <button type="submit" onclick="logar()" value="Entrar" id="btn-login">
+                    <button type="submit" onclick="LoginRoutingModule.logar()" value="Entrar" id="btn-login">
                         <span></span>
                         <span></span>
                         <span></span>
